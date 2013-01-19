@@ -22,7 +22,7 @@ namespace ConsoleApplication4
         }
     }
 
-    class person : IQueryable
+    class person
     {
         public string Name { get; set; }
         public int age { get; set; }

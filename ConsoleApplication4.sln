@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication4", "Cons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{F70DE565-BBBD-4121-8274-32BA44BE569D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSDotNet", "JSDotNet\JSDotNet.csproj", "{B3BC9CCE-AA82-4520-8E11-5323EE52AEFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSDotNet.WebApplication", "JSDotNet.WebApplication\JSDotNet.WebApplication.csproj", "{14BED61D-4A88-4148-AD2A-405D85956B1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +23,14 @@ Global
 		{F70DE565-BBBD-4121-8274-32BA44BE569D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F70DE565-BBBD-4121-8274-32BA44BE569D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F70DE565-BBBD-4121-8274-32BA44BE569D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3BC9CCE-AA82-4520-8E11-5323EE52AEFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3BC9CCE-AA82-4520-8E11-5323EE52AEFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3BC9CCE-AA82-4520-8E11-5323EE52AEFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3BC9CCE-AA82-4520-8E11-5323EE52AEFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14BED61D-4A88-4148-AD2A-405D85956B1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14BED61D-4A88-4148-AD2A-405D85956B1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14BED61D-4A88-4148-AD2A-405D85956B1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14BED61D-4A88-4148-AD2A-405D85956B1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

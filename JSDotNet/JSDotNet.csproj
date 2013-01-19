@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D4B0DD48-8BD9-42AF-8E11-D90AF79D3508}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{B3BC9CCE-AA82-4520-8E11-5323EE52AEFE}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ConsoleApplication4</RootNamespace>
-    <AssemblyName>ConsoleApplication4</AssemblyName>
+    <RootNamespace>JSDotNet</RootNamespace>
+    <AssemblyName>JSDotNet</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -34,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,9 +40,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\ModelClass1.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Core\JSDocumentFunction.cs" />
+    <Compile Include="Dom.objects\alert.cs" />
+    <Compile Include="Dom.objects\document.cs" />
+    <Compile Include="Dom.objects\location.cs" />
+    <Compile Include="Dom.objects\window.cs" />
+    <Compile Include="Core\JSArgs.cs" />
+    <Compile Include="Core\JSFunction.cs" />
+    <Compile Include="Core\JSFunctionCall.cs" />
+    <Compile Include="Core\JSProperty.cs" />
+    <Compile Include="Core\JSBlockStatement.cs" />
+    <Compile Include="Core\JSBlock.cs" />
+    <Compile Include="Core\JSValue.cs" />
+    <Compile Include="Core\JSValueString.cs" />
+    <Compile Include="Core\JSVariableString.cs" />
+    <Compile Include="Core\JSWindow.cs" />
+    <Compile Include="JSContext.cs" />
+    <Compile Include="JSManager.cs" />
+    <Compile Include="Syntax\JSFormatting.cs" />
+    <Compile Include="Syntax\JSKeyword.cs" />
+    <Compile Include="Core\JSStatement.cs" />
+    <Compile Include="Syntax\JSToken.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
