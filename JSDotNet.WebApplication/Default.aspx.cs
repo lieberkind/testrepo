@@ -60,23 +60,32 @@ namespace JSDotNet.CoreWebApplication
             #endregion
 
 
-            var p = new Panel();
-            p.Controls.Add(new Label() { Text = "Hello World!" });
-            form1.Controls.Add(p);
+            //var p = new Panel();
+            //p.Controls.Add(new Label() { Text = "Hello World!" });
+            //form1.Controls.Add(p);
 
 
             using (var JS = JSContext.Create)
             {
-                var f = JS.function(new JSBlock()
+                
+
+
+                var f1 = JS.function(new JSBlock()
                 {
                     alert.Call("hello"),
-                    window.alert("world") 
+                    //window.alert("world") 
                 });
+                f1.Call();
 
 
-                f.Call();
+                JSVariableString hello = "hello";
+                var f2 = JS.function(new JSBlock()
+                {
+                    alert.Call(hello)
+                });
+                f2.Call();
 
-                //print(JS.ToHtmlString());
+                print(JS.ToHtmlString());
                 RegisterStartupScript(JS.ToScript());
             }
             

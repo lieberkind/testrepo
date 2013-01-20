@@ -35,11 +35,11 @@ namespace JSDotNet
         #region Region: Function Declaration
         public JSFunction function()
         {
-            return RegisterStatement(new JSFunction(document) { Name = "foskdfop943984239482" });
+            return RegisterStatement(new JSFunction(document) { Name = JSManager.UniqueIdentifierString() });
         }
         public JSFunction function(JSBlock body)
         {
-            return RegisterStatement(new JSFunction(document) { Name = "foskdfop943984239482", Block = body });
+            return RegisterStatement(new JSFunction(document) { Name = JSManager.UniqueIdentifierString(), Block = body });
         }
         public JSFunction function(string name)
         {

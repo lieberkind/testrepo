@@ -13,11 +13,15 @@ namespace JSDotNet
         private void RegisterStartupScript(string script)
         {
             var p = (Page)(HttpContext.Current.Handler);
-            p.ClientScript.RegisterStartupScript(p.GetType(), Guid.NewGuid().ToString(), script);
+            p.ClientScript.RegisterStartupScript(p.GetType(), UniqueIdentifierString(), script);
         }
 
-        
+        public static string UniqueIdentifierString()
+        {
+            return "Guid" + Guid.NewGuid().ToString().RemoveIllegalCharacters();
+        }
     }
+
 
 
     internal static class JSExtensions
@@ -37,5 +41,13 @@ namespace JSDotNet
             }
             return str;
         }
+
+
+        internal static string RemoveIllegalCharacters(this String str)
+        {
+            return str.Replace("-", "");
+        }
+
+
     }
 }

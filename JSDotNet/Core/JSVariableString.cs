@@ -5,11 +5,27 @@ using System.Text;
 
 namespace JSDotNet.Core
 {
-    public class JSVariableString : JSValue
+    public class JSVariableString : JSValueString
     {
-        public JSVariableString(string name)
+        public static implicit operator JSVariableString(string strValue)
+        {
+            return new JSVariableString(strValue);
+        }
+        public static implicit operator string(JSVariableString variable)
+        {
+            return variable.Value;
+        }
+
+
+        public JSVariableString(string name, string strValue)
+            : base(strValue)
         {
             _Name = name;
+        }
+        public JSVariableString(string strValue)
+            : base(strValue)
+        {
+            _Name = JSManager.UniqueIdentifierString();
         }
         
         public string Name
