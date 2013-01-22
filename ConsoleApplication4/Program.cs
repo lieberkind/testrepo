@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace ConsoleApplication4
@@ -18,7 +19,11 @@ namespace ConsoleApplication4
 
             var results = persons.Where(p => p.age > 13).ToList();
             var results2 = (from p in persons where p.age > 13 select p).ToList();
-            
+
+            //Func<int, int> f = JS.function(n => n * 2);
+
+
+
         }
     }
 

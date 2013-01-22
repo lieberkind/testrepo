@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSDotNet", "JSDotNet\JSDotN
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSDotNet.WebApplication", "JSDotNet.WebApplication\JSDotNet.WebApplication.csproj", "{14BED61D-4A88-4148-AD2A-405D85956B1E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScriptLibrary1", "ScriptLibrary1\ScriptLibrary1.csproj", "{924592C5-C7D1-4435-A60F-0A3C56004FC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScriptSharpWebApplication", "ScriptSharpWebApplication\ScriptSharpWebApplication.csproj", "{077D5B12-25DC-4CD7-BB80-60DCDE37E299}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeScriptHTMLApp1", "TypeScriptHTMLApp1\TypeScriptHTMLApp1.csproj", "{5801B00E-8C8B-476A-8262-CC07D8331E16}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +37,18 @@ Global
 		{14BED61D-4A88-4148-AD2A-405D85956B1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14BED61D-4A88-4148-AD2A-405D85956B1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14BED61D-4A88-4148-AD2A-405D85956B1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{924592C5-C7D1-4435-A60F-0A3C56004FC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{924592C5-C7D1-4435-A60F-0A3C56004FC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{924592C5-C7D1-4435-A60F-0A3C56004FC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{924592C5-C7D1-4435-A60F-0A3C56004FC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{077D5B12-25DC-4CD7-BB80-60DCDE37E299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{077D5B12-25DC-4CD7-BB80-60DCDE37E299}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{077D5B12-25DC-4CD7-BB80-60DCDE37E299}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{077D5B12-25DC-4CD7-BB80-60DCDE37E299}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5801B00E-8C8B-476A-8262-CC07D8331E16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5801B00E-8C8B-476A-8262-CC07D8331E16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5801B00E-8C8B-476A-8262-CC07D8331E16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5801B00E-8C8B-476A-8262-CC07D8331E16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

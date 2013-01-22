@@ -3,6 +3,7 @@ using JSDotNet.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -77,17 +78,34 @@ namespace JSDotNet.CoreWebApplication
                 });
                 f1.Call();
 
-
-                JSVariableString hello = "hello";
+                var hello1 = new JSVariableString("hello");
+                JSVariableString hello2 = "hello";
                 var f2 = JS.function(new JSBlock()
                 {
-                    alert.Call(hello)
+                    alert.Call(hello2)
                 });
                 f2.Call();
 
-                print(JS.ToHtmlString());
+                #region Region: Expression Sandbox Code
+                //Expression<Func<JSVariableString, JSBlock>> l1 = str => str.Equals("true") ? new JSBlock() : new JSBlock();
+                //var d1 = l1.Compile();
+                ////string JS_d1 = l1.CompileToJavaScript();
+                //d1(new JSVariableString("hello"));
+
+                //Expression<Func<int, bool>> ValidationFunction = i => i > 0;
+                //Expression<Func<Func<int, bool>, JSFunctionCall>> JSOutput = b => ValidationFunction ? JSSubmit() : alert.Call("Invalid input");
+                #endregion
+
+
+
+                //print(JS.ToHtmlString());
                 RegisterStartupScript(JS.ToScript());
             }
+
+
+
+
+            Func<int, int> twice = (int x) => x * 2;
             
         }
 
